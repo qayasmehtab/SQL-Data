@@ -1,58 +1,42 @@
-# Step-by-Step Guide to Download & Install SQL Server Management Studio (SSMS) and SQL Server Developer Edition
+# SQL Server (t-SQL)
 
-### Step 1: Download & Install SQL Server Management Studio (SSMS) 2024 Version
+_NOTE: This repository is part of cloud data engineering roadmap for getting hands on t-SQL on Microsoft SQL Server_
 
-- Open your web browser and go to this link:
-<a href="https://www.sqlserverversions.com/2018/01/sql-server-management-studio-ssms.html" 
-   target="_blank" 
-   title="SQL Server Management Studio Versions - 2024">
-   SQL Server Management Studio Versions (2024)
-</a>
+## What is SQL Server?
 
-- Scroll through the list on the page and find the SSMS version released in 2024. (Make sure you pick the 2024 version, not the one Sir Qasim mentioned.)
+- Relational database management system (RDBMS) developed by Mricosoft.
+- Similar to other RDBMS software, SQL Server is built on top of SQL.
+- SQL Server is tied to Transact-SQL, or T-SQL which includes a set of proprietary programming constructs.
 
-- Click the download link for the 2024 SSMS version.
+## SQL Cheatsheet
+![SQL-Cheatsheet](https://github.com/umair7228/T-SQL/assets/154393500/6f8350c5-73b0-4610-a821-dd263dcb7816)
 
-- Once the installer file is downloaded, run the installer by double-clicking it.
+## SQL Server Architecture
 
-- Follow the on-screen prompts to install SSMS. It usually takes a few minutes.
+SQL Server consists of two main components:
 
-- After installation is complete, launch SQL Server Management Studio from your Start Menu or desktop shortcut.
+- Database Engine
+    - Core component of the SQL Server is the Database Engine
+    - Comprises a relational engine that **processes queries** and a **storage engine** that **manages database files, pages, indexes**, etc
+    - Additionally, the database engine creates database objects such as stored procedures, views, and triggers.
 
-### Step 2: Download SQL Server Developer Edition
+- SQLOS
+    - Under the relational engine and storage engine lies the SQL Server Operating System, or SQLOS.
+    - SQLOS provides services such as **memory** and **I/O management**, as well as **exception handling** and **synchronization** services.
 
-- Open your web browser and go to this link:
-<a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" 
-   target="_blank" 
-   title="SQL Server Developer Edition Downloads">
-   SQL Server Developer Edition Downloads
-</a>
+![sql-server-architecture](https://github.com/umair7228/T-SQL/assets/154393500/73806d9d-3b3f-47b3-8b5b-4f3b094fa93e)
 
-- Scroll down the page until you find the Developer Edition section.
 
-- Click Download now under Developer Edition.
+## Others tools
 
-- The installer file will download.
+- SSMS used for database development
+- SSIS used for data management
+- SSAS used for analysis
+- SSRS used for reporting
 
-### Step 3: Install SQL Server Developer Edition
+_NOTE: SSMS & SSIS are important skillset for Data Engineers_
 
-- Once downloaded, run the installer file.
-
-- Go to this tutorial link for detailed installation instructions:
-<a href="https://www.sqlservertutorial.net/getting-started/install-sql-server/" 
-   target="_blank" 
-   title="Install SQL Server Developer Edition Tutorial">
-   SQL Server Developer Edition Installation Tutorial
-</a>
-
-- Follow the tutorial step by step exactly as shown:
-
-- Choose Basic or Custom installation based on your comfort level (Basic is easiest).
-
-- Accept license terms.
-
-- Select installation location if prompted.
-
-- Wait for the installation to complete.
-
-- After installation, configure your SQL Server instance as shown in the tutorial.
+## Summary
+- SQL server architecture includes a **database engine** and **SQL server operation system (SQLOS)**
+- SQL server offers a set of tools for working with data effectively
+- SQL server has different editions including developer edition, expression, enterprise, and standard

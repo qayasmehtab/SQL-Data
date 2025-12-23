@@ -1,1 +1,0 @@
-SELECT top(10) * FROM [sales].[customers];
